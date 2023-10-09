@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #fffaf5;
 }
 *{
     box-sizing: inherit;
@@ -15,7 +16,9 @@ a {
     text-decoration: none;
 }
 body{
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
+    background-color: var(--primary-color);
 }
 .arrow-right__icon{
     margin-left: 10px;
@@ -28,6 +31,51 @@ body{
 }
 .bg-color{
     background-color: var(--bg-color, #0f1b4c);
+}
+.btn{
+    --height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid rgb(0, 9, 88, 0.7);
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000958;
+}
+.hero__heading{
+    font-family: 'Sora', sans-serif;
+    font-weight: 900;
+    font-size: 6.6rem;
+    line-height: 1.15;
+    color: #000958;
+}
+.section__heading{
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+.section__desc{
+    margin-top: 24px;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+h2{
+    font-family: 'Sora', sans-serif;
+}
+.btn--primary{
+    color: #fff !important;
+    background: #ff5b2e !important;
+    border-color: #ff5b2e !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sora", sans-serif;
 }
 @keyframes fadeIn {
     from {
